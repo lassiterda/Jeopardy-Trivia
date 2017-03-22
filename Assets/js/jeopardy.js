@@ -148,19 +148,19 @@ var categories = [
                                                   value: 400,
                                                   answers: [
                                                     {
-                                                      choice: "Text here",
+                                                      choice: "",
                                                       correct: false
                                                     },
                                                     {
-                                                      choice: "Text here",
+                                                      choice: "Stonewall Jackson",
                                                       correct: true
                                                     },
                                                     {
-                                                      choice: "Text here",
+                                                      choice: "Zachary Taylor",
                                                       correct: false
                                                     },
                                                     {
-                                                      choice: "Text here",
+                                                      choice: "Joseph Hooker",
                                                       correct: false
                                                     }]
                                                 },
