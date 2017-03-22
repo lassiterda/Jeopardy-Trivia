@@ -122,7 +122,7 @@ var categories = [
                   questions: [
                                                 {
                                                   row: "1",
-                                                  question: "<h2>This pivotal battle holds the record as the bloddiest battle in American History</h2>",
+                                                  question: "<h2>This pivotal battle holds the record as the bloodiest battle in American History</h2>",
                                                   value: 200,
                                                   answers: [
                                                           {
@@ -210,7 +210,7 @@ var categories = [
                                                 },
                                                 {
                                                   row: "5",
-                                                  question: "<h2>During the Penisula Campaign, this Confederate General created the illusion of a much larger force by marching his soldiers in ant out of trees and hills</h2>",
+                                                  question: "<h2>During the Penisula Campaign, this Confederate General created the illusion of a much larger force by marching his soldiers in and out of trees and hills</h2>",
                                                   value: 1000,
                                                   answers: [
                                                     {
@@ -398,7 +398,7 @@ var categories = [
                                                 },
                                                 {
                                                   row: "3",
-                                                  question: "<h2>ThisActress who won an Oscar, Emmy, Grammy, and Tony award. Later on, she won the Presidential Medal of Freedom for her work as a UNICEF Goodwill Ambassador</2>",
+                                                  question: "<h2>This actress who won an Oscar, Emmy, Grammy, and Tony award. Later on, she won the Presidential Medal of Freedom for her work as a UNICEF Goodwill Ambassador</2>",
                                                   value: 600,
                                                   answers: [
                                                     {
@@ -492,7 +492,7 @@ var categories = [
                                                   },
                                                 {
                                                   row: "2",
-                                                  question: "<h2>Strange things are afoot at the Cicle K</h2>",
+                                                  question: "<h2>Strange things are afoot at the Circle K</h2>",
                                                   value: 400,
                                                   answers: [
                                                     {
@@ -609,7 +609,7 @@ $("#game-reset").click (function() {
 //Click handler function which handles Data and DOM Manipulation when a question is clicked
 $(".question-text").click(function() {
   //Hides the event target
-  $(event.target).addClass("hidden");
+  $(event.target).addClass("skinny");
 
   //Grabs the question based on the row and column values clicked
   currentQuestion = grabQuestion(event.target.getAttribute("column"),event.target.getAttribute("row"), categories);
@@ -666,7 +666,7 @@ var dispBlocks  = function () {
     }
     else {
       ele = Math.floor(Math.random() * arr.length)
-        $("h2[column="+ arr[ele].column +"][row=" + arr[ele].row +"]").removeClass("hidden");
+        $("h2[column="+ arr[ele].column +"][row=" + arr[ele].row +"]").removeClass("skinny");
         arr.splice(ele, 1);
         setTimeout(beepBoop, 100, arr);
     }
@@ -687,7 +687,7 @@ var dispBlocks  = function () {
   //Loop to the category-text blocks each category title
    for (i = 0; i < categoryTitleArr.length; i++) {
      $(categoryEleArr[i]).text(categoryTitleArr[i]);
-     $(categoryEleArr[i]).removeClass("hidden");
+     $(categoryEleArr[i]).removeClass("skinny");
    }
   beepBoop(positionArr);
 };
