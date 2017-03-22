@@ -238,7 +238,7 @@ var categories = [
                   questions: [
                                                 {
                                                   row: "1",
-                                                  question: "<img class='img img-responsive center-block' src='assets/images/countryImages/country200.png' />",
+                                                  question: "<img class='img img-responsive center-block' src='Assets/images/countryImages/country200.png' />",
                                                   value: 200,
                                                   answers: [
                                                           {
@@ -260,7 +260,7 @@ var categories = [
                                                   },
                                                 {
                                                   row: "2",
-                                                  question: "<img class='img img-responsive center-block' src='assets/images/countryImages/country400.png' />",
+                                                  question: "<img class='img img-responsive center-block' src='Assets/images/countryImages/country400.png' />",
                                                   value: 400,
                                                   answers: [
                                                     {
@@ -282,7 +282,7 @@ var categories = [
                                                 },
                                                 {
                                                   row: "3",
-                                                  question: "<img class='img img-responsive center-block' src='assets/images/countryImages/country600.png' />",
+                                                  question: "<img class='img img-responsive center-block' src='Assets/images/countryImages/country600.png' />",
                                                   value: 600,
                                                   answers: [
                                                     {
@@ -304,7 +304,7 @@ var categories = [
                                                 },
                                                 {
                                                   row: "4",
-                                                  question: "<img class='img img-responsive center-block' src='assets/images/countryImages/country800.png' />",
+                                                  question: "<img class='img img-responsive center-block' src='Assets/images/countryImages/country800.png' />",
                                                   value: 800,
                                                   answers: [
                                                     {
@@ -326,7 +326,7 @@ var categories = [
                                                 },
                                                 {
                                                   row: "5",
-                                                  question: "<img class='img img-responsive center-block' src='assets/images/countryImages/country1000.png' />",
+                                                  question: "<img class='img img-responsive center-block' src='Assets/images/countryImages/country1000.png' />",
                                                   value: 1000,
                                                   answers: [
                                                     {
