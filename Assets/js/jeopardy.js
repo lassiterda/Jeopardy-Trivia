@@ -549,7 +549,7 @@ var categories = [
                                                     },
                                                     {
                                                       choice: "Ferris Bueller",
-                                                      correct: false
+                                                      correct: true
                                                     },
                                                     {
                                                       choice: "Pretty in Pink",
