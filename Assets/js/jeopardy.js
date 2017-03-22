@@ -1,3 +1,4 @@
+//Data sctucture which holds the Categories, questions, and answers
 var categories = [
   thisAndThat = {
                   column: "A",
