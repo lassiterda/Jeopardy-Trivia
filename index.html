@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jeopardy</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <header>
+      <button type="button" class="btn btn-danger " id="game-reset">Reset</button>
+      <button type="button" class="btn btn-success " id="game-start">Play</button>
+      <img class-"img img-responsive" src="assets/images/jeopardy-logo.png"/>
+    <h3>Score: <span id="score">$ ---</span></h3>
+    </header>
+        <!-- question Modal-->
+    <div class="modal fade" id="Modal" role="question">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content" id="question-modal">
+          <div class="modal-header">
+            <h3 class="modal-title" >:<span id="time-remaining">15</span></h3>
+          </div>
+          <div class="modal-body">
+          <div id="question-content">
+          </div>
+
+          </div>
+          <div class="modal-footer">
+            <div id="question-answers">
+              <button type="button" class="btn btn-default answer-choice" choice="">[Answer here]</button>
+              <button type="button" class="btn btn-default answer-choice" choice="">[Answer here]</button>
+              <button type="button" class="btn btn-default answer-choice" choice="">[Answer here]</button>
+              <button type="button" class="btn btn-default answer-choice" choice="">[Answer here]</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <main class="container-fluid">
+      <section class="centered">
+        <div class="row categories">
+          <div class="category">
+            <h4 class="category-text hidden" column="A" title="200">[Category here]</h4>
+          </div>
+          <div class="category">
+            <h4 class="category-text hidden" column="B">[Category here]</h4>
+          </div>
+          <div class="category">
+            <h4 class="category-text hidden" column="C">[Category here]</h4>
+          </div>
+          <div class="category">
+            <h4 class="category-text hidden" column="D">[Category here]</h4>
+          </div>
+          <div class="category">
+            <h4 class="category-text hidden" column="E" >[Category here]</h4>
+          </div>
+        </div>
+        <div class="row questions" order="1">
+          <div class="question">
+            <h2 class="question-text hidden" column="A" row="1">$200</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="B" row="1">$200</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="C" row="1">$200</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="D" row="1">$200</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="E" row="1">$200</h2>
+          </div>
+        </div>
+        <div class="row questions" order="2">
+          <div class="question" >
+            <h2 class="question-text hidden" column="A" row="2">$400</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="B" row="2">$400</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="C" row="2">$400</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="D" row="2">$400</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="E" row="2">$400</h2>
+          </div>
+        </div>
+        <div class="row questions" order="3">
+          <div class="question">
+            <h2 class="question-text hidden" column="A" row="3">$600</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="B" row="3">$600</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="C" row="3">$600</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="D" row="3">$600</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="E" row="3">$600</h2>
+          </div>
+        </div>
+        <div class="row questions" order="4">
+          <div class="question">
+            <h2 class="question-text hidden" column="A" row="4">$800</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="B" row="4">$800</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="C" row="4">$800</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="D" row="4">$800</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="E" row="4">$800</h2>
+          </div>
+        </div>
+        <div class="row questions" order="5">
+          <div class="question">
+            <h2 class="question-text hidden" column="A" row="5">$1000</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="B" row="5">$1000</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="C" row="5">$1000</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="D" row="5">$1000</h2>
+          </div>
+          <div class="question">
+            <h2 class="question-text hidden" column="E" row="5">$1000</h2>
+          </div>
+       </div>
+      </section>
+    </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/jeopardy.js">
+
+  </script>
+
+  </body>
+</html>
